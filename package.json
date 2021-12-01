@@ -1,0 +1,27 @@
+{
+  "name": "eslint-ratchet",
+  "version": "1.0.0",
+  "description": "Gradually reduce eslint warnings",
+  "scripts": {
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "./bin/eslint-ratchet.sh",
+    "lint:eslint:ci": "env CI=true npm run lint:eslint",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marchuffnagle/eslint-ratchet.git"
+  },
+  "keywords": [
+    "eslint",
+    "ratchet"
+  ],
+  "author": "Marc Huffnagle <marc@huffnagle.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marchuffnagle/eslint-ratchet/issues"
+  },
+  "homepage": "https://github.com/marchuffnagle/eslint-ratchet#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0"
+  }
+}
