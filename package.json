@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "npm run lint:eslint",
     "lint:eslint": "./bin/eslint-ratchet.sh",
-    "lint:eslint:ci": "env CI=true npm run lint:eslint",
+    "lint:eslint:ci": "env CI=true npm run lint:eslint"
   },
   "repository": {
     "type": "git",
