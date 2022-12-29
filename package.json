@@ -1,27 +1,39 @@
 {
   "name": "eslint-ratchet",
   "version": "1.0.0",
-  "description": "Gradually reduce eslint warnings",
+  "description": "Utility to ratchet down ESLint errors.",
+  "bin": "./dist/cli.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "lint": "npm run lint:eslint",
-    "lint:eslint": "./bin/eslint-ratchet.sh",
-    "lint:eslint:ci": "env CI=true npm run lint:eslint"
+    "prepublishOnly": "tsc",
+    "test": "./test.sh"
+  },
+  "homepage": "https://codeberg.org/marchuffnagle/eslint-ratchet#eslint-ratchet",
+  "bugs": {
+    "url": "https://codeberg.org/marchuffnagle/eslint-ratchet/issues",
+    "email": "marc@huffnagle.net"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marchuffnagle/eslint-ratchet.git"
+    "url": "https://codeberg.org/marchuffnagle/eslint-ratchet.git"
   },
   "keywords": [
-    "eslint",
-    "ratchet"
+    "eslint"
   ],
   "author": "Marc Huffnagle <marc@huffnagle.net>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/marchuffnagle/eslint-ratchet/issues"
-  },
-  "homepage": "https://github.com/marchuffnagle/eslint-ratchet#readme",
   "devDependencies": {
-    "eslint": "^8.3.0"
+    "@types/node": "^14.18.33",
+    "eslint": "^8.29.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "eslint": ">=4"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
