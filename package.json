@@ -1,6 +1,6 @@
 {
   "name": "eslint-ratchet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to ratchet down ESLint errors.",
   "bin": "./dist/cli.js",
   "files": [
@@ -10,14 +10,14 @@
     "prepublishOnly": "tsc",
     "test": "./test.sh"
   },
-  "homepage": "https://codeberg.org/marchuffnagle/eslint-ratchet#eslint-ratchet",
+  "homepage": "https://github.com/marchuffnagle/eslint-ratchet#eslint-ratchet",
   "bugs": {
-    "url": "https://codeberg.org/marchuffnagle/eslint-ratchet/issues",
+    "url": "https://github.com/marchuffnagle/eslint-ratchet/issues",
     "email": "marc@huffnagle.net"
   },
   "repository": {
     "type": "git",
-    "url": "https://codeberg.org/marchuffnagle/eslint-ratchet.git"
+    "url": "https://github.com/marchuffnagle/eslint-ratchet.git"
   },
   "keywords": [
     "eslint"
